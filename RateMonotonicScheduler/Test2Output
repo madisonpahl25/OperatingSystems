@@ -1,0 +1,38 @@
+With i = 5000 (look at Thread 0 code)
+
+Thread 0:
+    Times Ran: 158
+    Overruns:  1
+    Running time: 1916 nanoseconds
+Thread 1:
+    Times Ran: 80
+    Overruns:  0
+    Running time: 1924 nanoseconds
+Thread 2:
+    Times Ran: 40
+    Overruns:  0
+    Running time: 1924 nanoseconds
+Thread 3:
+    Times Ran: 10
+    Overruns:  0
+    Running time: 1924 nanoseconds
+    
+
+With i = 10000 (look at Thread 0 code)
+
+Thread 0:
+    Times Ran: 156
+    Overruns:  3
+    Running time: 1907 nanoseconds
+Thread 1:
+    Times Ran: 80
+    Overruns:  0
+    Running time: 1912 nanoseconds
+Thread 2:
+    Times Ran: 40
+    Overruns:  0
+    Running time: 1912 nanoseconds
+Thread 3:
+    Times Ran: 10
+    Overruns:  0
+    Running time: 1912 nanoseconds

@@ -1,0 +1,43 @@
+/*Created By: Madison Pahl
+ *File name: README
+ *Project Date Created: 05/1/2017
+ *Project Date Completed: 05/4/2017
+ */
+
+Requirements:
+-Build Rate Monotonic Scheduler with four threads
+	-Scheduler details:
+		-Threads T0 - T3
+		-Thread T0 has a period of 1 unit
+		-Thread T1 has a period of 2 units
+		-Thread T2 has a period of 4 units
+		-Thread T3 has a period of 16 units
+		
+		-A unit shall be anywhere from 10-100 ms (depending on operating system options)
+		-Each thread will execute the same doWork method but run it different amounts of times:
+			-Thread T0 executes doWork 1 time
+			-Thread T1 executes doWork 2 times
+			-Thread T2 executes doWork 4 times
+			-Thread T3 executes doWork 16 times
+
+-Scheduler shall have a major frame period of 16 units of time
+-Program shall start scheduler and four threads that are to be scheduled
+	-Scheduler needs to be woken up by a periodic source (signal/timer/etc) and it shall schedule
+	the threads
+	-The program shall run for 10 periods and then terminate, but not before printing out how many
+	times each thread ran
+-Each thread shall increment a dedicated counter each time it runs
+-The scheduler shall be able to identify if a thread has missed its deadline and keep track of how
+many times it happens.
+
+-The following test cases shall be demonstrated
+	-Nominal case with no overruns
+	-Failed case where the doWork function is called as many times as required to lead to an overrun
+	condition in T0 --What happens to other threads?
+	-Failed case where T2 has an overrun condition --What happens to other threads?
+	-All results are printed out at the completion of the run to not effect the timing
+	
+-doWork function will do following
+	-will multiply the content of each cell of a 10x10 matrix starting with column 0 followed by 5,
+	then 1 followed by 6, etc.
+	

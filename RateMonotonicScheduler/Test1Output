@@ -1,0 +1,16 @@
+Thread 0:
+    Times Ran: 160
+    Overruns:  0
+    Running time: 1912 nanoseconds
+Thread 1:
+    Times Ran: 80
+    Overruns:  0
+    Running time: 1912 nanoseconds
+Thread 2:
+    Times Ran: 40
+    Overruns:  0
+    Running time: 1912 nanoseconds
+Thread 3:
+    Times Ran: 10
+    Overruns:  0
+    Running time: 1912 nanoseconds

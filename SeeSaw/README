@@ -1,0 +1,30 @@
+Name: Madison Pahl
+ID: 1904542
+Date: 03/22/17 - 03/25/17
+
+Resources:
+
+
+Description:
+	You are building a see-saw simulator that emulates two individuals that weight the
+	same going up-and-down. On one end you have person A, Fred. Whenever he pushes up,
+	he creates an effective upward velocity of 1ft/sec. On the other end you have 
+	person B, Wilma. Whenever she pushes up she creates an effective velocity of 1.5ft/sec.
+	Whenever, person A or B comes within 1ft of the ground they will push back up causing 
+	the opposing person to come down. The maximum height any person will go is 7ft. Using
+	TWO threads and TWO semaphores, write a simulator that emulates these conditions.
+	
+	
+	Assume at time 0 person A is at the low end, one foot from the ground ready to push up.
+	This means person B is at the high end, 7 feet off the ground.
+	
+	At the 1 second mark, person A is 2ft off the ground and person B is 6 feet off the ground.
+	They continue to travel in opposite directions until person B is 1 foot off the ground.
+	
+	When person B is 1 foot off the ground, she will push upwards and reverse direction. Remember,
+	Wilma is stronger than Fred, so one second later she will be 2.5 ft off the ground and Fred will
+	be 5.5 ft.
+	
+	Assume simulator once started will run 10 times (up-and-down)
+	In order to throttle each process, you can sleep(1 sec)
+	

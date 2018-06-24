@@ -1,0 +1,41 @@
+Created By: Madison Pahl  
+Student ID:1904542
+File: README
+Date Created: 03/04/2017
+Dates Modified: 03/05/2017, 03/06/2017
+Date Completed: 03/07/2017
+
+This Project was completed with the help of slides learned during OS class, and reference material on how to
+work with threading and java. Generic documentation from online sources lead to my choice in using Runnable 
+with my threading.
+
+Description: Sudoku Solution Validator (Chapman University-- Operating Systems Project 1)
+
+Requirements:
+	The sudoku validator program shall validate a 9x9 completed puzzle for correctness
+		-corectness means: each column and row must contain all of the digits 1-9 once
+						   each of the nine 3x3 sub-grids must contain all of the digits 1-9 once
+
+	The sudoku validator shall accept as input a ASCII .txt file whith the elements separated by 
+	commas and structured as a 9x9
+		-sample test cases provided for testing
+		-Failed test cases will be provided and need to be demonstrated as part of the project
+	
+	The sudoku validator shall specify via output to the user where the error occurred (e.g. column 5,
+	row 3 --preference would be 1-based answers)
+
+	Once the sudoku validator detects an error, it must also specify what is the correct solution for that 
+	cell
+
+	The sudoku validator shall provide user feedback to the GUI CLI to help explain what is going on and the final answer
+		-printouts of steps as they progress may be helpful
+
+Implementation:
+	The sudoku validator must contain at least 3 threads not-including the main thread (no max thread limit provided it does not exceed 27)
+		-final answer must be provided by main thread after the helper threads complete their job
+			-helper threads can provide intermeidate feedback if a failure is detected
+
+	programming language and O/S are optional
+		-preference would be to use posix threads on linux, but others are ok if necessary
+		-explicit threads must be used --not implicit
+			-must demonstrate creation of threads, exit of threads and joining of helper threads with main one
